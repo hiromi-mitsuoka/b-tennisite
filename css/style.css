@@ -86,6 +86,9 @@ body{
   border-bottom: none;
 }
 
+/* Private */
+
+
 /* sns */
 .sns{
   /* background-color: #FF6928dd; */
@@ -108,23 +111,33 @@ body{
   color: #00b900;
 }
 
-/* 基本のスタイル */
-   .foo.delighter {
-      transition: all .3s ease-out;
-      transform: translateX(-100%);
-      opacity: 0;
-   }
+/* フローティングボタン */
+.floating {
+  position: fixed;
+  right: 1rem;
+  bottom: 0.5rem;
+  display: none;
+  z-index: 20;
+}
+.floating a {
+  display: block;
+  font-size: 3rem;
+  color: #111;
+  padding: 1rem;
+  text-decoration: none;
+  opacity: 0.8;
+  z-index: 20;
+}
+.floating a:hover {
+  color: #111;
+  opacity: 1;
+  z-index: 20;
+}
 
-/* スタート時のスタイル */
-   .foo.delighter.started {
-      transform: none;
-      opacity: 1;
-   }
 
-/* エンド時のスタイル */
-   .foo.delighter.started.ended {
-      border: solid red 10px;
-   }
+
+
+
 
 
 
@@ -143,7 +156,7 @@ body{
     font-size: 5rem!important;
   }
 .first-view p{
-  font-size: 33px;
+  font-size: 30px;
 }
 .card p{
   font-size: 16px;
@@ -152,7 +165,7 @@ body{
 
 @media (min-width:992px){
 .first-view p{
-  font-size: 42px;
+  font-size: 38px;
 }
 .card p{
   font-size: 18px;
@@ -161,7 +174,7 @@ body{
 
 @media (min-width:1200px){
 .first-view p{
-  font-size: 50px;
+  font-size: 40px;
 }
 .card p{
   font-size: 14px;
