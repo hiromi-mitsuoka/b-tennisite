@@ -1,0 +1,147 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* font-family: 'Futura', '筑紫B丸ゴシック'san-selif; */
+  font-family: Futura, "Hirago KakuGothic Pro", sans-serif;
+}
+
+body{
+  /* position: relative; */
+}
+#header-fixed{
+  background: #FF6928;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+.first-view p{
+  /* display: block; */
+  width: 64%;
+  margin: 0 auto;
+}
+
+/* Swiper */
+.swiper-container {
+    width: 100%;
+    height: auto;
+    background: #000;
+}
+
+
+/* event */
+.pos-match{
+  /* height:4650px; */
+  width: auto;
+  margin:0 auto;
+  overflow: hidden;
+  position: relative;
+}
+#hoge{
+  width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    z-index: -1;
+    background-color: #FF6928aa;
+}
+.pos-center{
+  display: block;
+  margin: 0 auto;
+}
+.card{
+  background: #fff;
+  width: 90%;
+  display: block;
+  margin: 0 auto;
+}
+.card p{
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  height: 130px;
+}
+.btn-gradient-3d {
+  display: inline-block;
+  margin: 0 auto;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  border-radius: 4px;
+  color: #ffffff;
+  background-image: linear-gradient(45deg, #FFC107dd 0%, #FF6928dd 100%);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+  border-bottom: solid 3px #c58668;
+}
+.btn-gradient-3d:active {
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2);
+  border-bottom: none;
+}
+
+/* sns */
+.sns{
+  /* background-color: #FF6928dd; */
+}
+.sns a{
+  font-size: 4rem;
+}
+.fa-instagram{
+  color: #e7043b;
+  background: -webkit-linear-gradient(45deg, #e7043b, #4a0cc1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.fa-twitter{
+  color: #00aced;
+  margin-right: 2rem;
+  margin-left: 2rem;
+}
+.fa-line{
+  color: #00b900;
+}
+
+
+/* メディアクエリ モバイルファースト */
+@media screen and (min-width:576px){
+  .first-view p{
+  font-size: 23px;
+}
+.card p{
+  font-size: 20px;
+}
+}
+
+@media (min-width:768px){
+  h1{
+    font-size: 5rem!important;
+  }
+.first-view p{
+  font-size: 33px;
+}
+.card p{
+  font-size: 16px;
+}
+}
+
+@media (min-width:992px){
+.first-view p{
+  font-size: 42px;
+}
+.card p{
+  font-size: 18px;
+}
+}
+
+@media (min-width:1200px){
+.first-view p{
+  font-size: 50px;
+}
+.card p{
+  font-size: 14px;
+}
+}
