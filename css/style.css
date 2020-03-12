@@ -20,6 +20,9 @@ body{
   width: 64%;
   margin: 0 auto;
 }
+.empty h1{
+  color: #fff;
+}
 
 /* Swiper */
 .swiper-container {
