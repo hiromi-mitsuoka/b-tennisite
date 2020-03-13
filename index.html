@@ -5,10 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <meta name=”viewport” content=”width=device-width,initial-scale=1.0,minimum-scale=1.0″>
   <!-- jQuery -->
+  <!-- cdn -->
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"> -->
+  </script>
+  <!-- swiper -->
   <link rel="stylesheet" href="css/swiper.min.css">
   <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+  <!-- wow -->
   <link rel="stylesheet" href="css/animate.css">
   <script src="js/wow.min.js"></script>
   <!-- Font Awesome -->
@@ -28,11 +32,8 @@
     <h1>B-TENNIS</h1>
   </div>
 
-  <!-- Slider全体のコンテナ -->
   <div class="swiper-container">
-    <!-- Sliderの内包コンテナ -->
     <div class="swiper-wrapper">
-      <!-- Slideさせたいコンテンツ -->
       <div class="swiper-slide"><img class="w-100" src="img/5daigakusai/da01.JPG" alt="image"></div>
       <div class="swiper-slide"><img class="w-100" src="img/2natugassyuku/na01.jpg" alt="image"></div>
       <div class="swiper-slide"><img class="w-100" src="img/2natugassyuku/na02.jpg" alt="image"></div>
@@ -50,6 +51,30 @@
       掲載しています！！🎾</p>
   </section>
 
+  <!-- モーダルの設定 -->
+  <div class="modal fade w-100" id="Modal" tabindex="-1" role="dialog" aria-labelledby="Modal" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content container">
+        <div class="modal-header">
+          <h5 class="modal-title ml-4" id="Modal">確定新歓</h5>
+          <button type="button" class="close pt-4" data-dismiss="modal" aria-label="閉じる">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body row">
+          <img class="col-xl-6 mb-2" src="img/1sinnkann/shi01.jpg" alt="image">
+          <img class="col-xl-6 mb-2" src="img/1sinnkann/shi02.jpg" alt="image">
+          <img class="col-xl-6 mb-2" src="img/1sinnkann/shi03.jpg" alt="image">
+          <img class="col-xl-6 mb-2" src="img/1sinnkann/shi04.jpg" alt="image">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn-gradient-3d" data-dismiss="modal">閉じる</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
   <div class="pos-match">
     <div id="hoge"></div>
 
@@ -64,7 +89,30 @@
             一年生にとって初のイベント！<br>
             去年はジャンプをテーマに学内全体を貸し切った大イベントを開催！！
             今年のテーマは当日までのお楽しみだよ！！</p>
-            <a href="#" class="btn-gradient-3d  text-center w-50 pt-1 pb-1 mt-2 mb-3" role="button">More Photo</a>
+            <button class="btn-gradient-3d  text-center w-50 pt-1 pb-1 mt-2 mb-3" type="button" data-toggle="modal" data-target="#Modal">More Photo</button>
+            <!-- モーダルの設定 -->
+            <div class="modal fade w-100" id="Modal" tabindex="-1" role="dialog" aria-labelledby="Modal" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content container">
+                  <div class="modal-header">
+                    <h5 class="modal-title ml-4" id="Modal">確定新歓</h5>
+                    <button type="button" class="close pt-4" data-dismiss="modal" aria-label="閉じる">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body row">
+                    <img class="col-xl-6 mb-2" src="img/1sinnkann/shi01.jpg" alt="image">
+                    <img class="col-xl-6 mb-2" src="img/1sinnkann/shi02.jpg" alt="image">
+                    <img class="col-xl-6 mb-2" src="img/1sinnkann/shi03.jpg" alt="image">
+                    <img class="col-xl-6 mb-2" src="img/1sinnkann/shi04.jpg" alt="image">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn-gradient-3d" data-dismiss="modal">閉じる</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
         <div class="col-md-6 col-xl-3 p-2 mb-5 text-center wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s" data-wow-offset="10">
@@ -75,7 +123,28 @@
             Bテのメインイベント！<br>
             個人戦、学年別団体戦など目白押し！
             先輩ともさらに仲良くなれる大チャンス！！</p>
-            <a href="#" class="btn-gradient-3d  text-center w-50 pt-1 pb-1 mt-2 mb-3" role="button">More Photo</a>
+            <button class="btn-gradient-3d  text-center w-50 pt-1 pb-1 mt-2 mb-3" type="button" data-toggle="modal" data-target="#Moda2">More Photo</button>
+            <div class="modal fade w-100" id="Moda2" tabindex="-1" role="dialog" aria-labelledby="Modal" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content container">
+                  <div class="modal-header">
+                    <h5 class="modal-title ml-4" id="Modal">夏合宿</h5>
+                    <button type="button" class="close pt-4" data-dismiss="modal" aria-label="閉じる">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body row">
+                    <img class="col-xl-6 mb-2" src="img/2natugassyuku/na01.jpg" alt="image">
+                    <img class="col-xl-6 mb-2" src="img/2natugassyuku/na02.jpg" alt="image">
+                    <img class="col-xl-6 mb-2" src="img/2natugassyuku/na03.jpg" alt="image">
+                    <img class="col-xl-6 mb-2" src="img/2natugassyuku/na04.jpg" alt="image">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn-gradient-3d" data-dismiss="modal">閉じる</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="col-md-6 col-xl-3 p-2 mb-5 text-center wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s" data-wow-offset="10">
@@ -85,7 +154,28 @@
             <p class="pb-2 text-left">
             皆でバーベキューして、川遊びして…そして1番は肝試し！！<br>
             くじで男女ペアを決めて回ってもらいます！ドキドキですね♡</p>
-            <a href="#" class="btn-gradient-3d  text-center w-50 pt-1 pb-1 mt-2 mb-3" role="button">More Photo</a>
+            <button class="btn-gradient-3d  text-center w-50 pt-1 pb-1 mt-2 mb-3" type="button" data-toggle="modal" data-target="#Moda3">More Photo</button>
+            <div class="modal fade w-100" id="Moda3" tabindex="-1" role="dialog" aria-labelledby="Modal" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content container">
+                  <div class="modal-header">
+                    <h5 class="modal-title ml-4" id="Modal">キャンプ</h5>
+                    <button type="button" class="close pt-4" data-dismiss="modal" aria-label="閉じる">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body row">
+                    <img class="col-xl-6 mb-2" src="img/3kyannpu/kya01.jpg" alt="image">
+                    <img class="col-xl-6 mb-2" src="img/3kyannpu/kya02.jpg" alt="image">
+                    <img class="col-xl-6 mb-2" src="img/3kyannpu/kya03.jpg" alt="image">
+                    <img class="col-xl-6 mb-2" src="img/3kyannpu/kya04.jpg" alt="image">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn-gradient-3d" data-dismiss="modal">閉じる</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="col-md-6 col-xl-3 p-2 mb-5 text-center wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s" data-wow-offset="10">
@@ -97,7 +187,28 @@
             街へ繰り出す大イベント！<br>
             仮装した先輩から出される
             難題を解きながら楽しく観光！！</p>
-            <a href="#" class="btn-gradient-3d  text-center w-50 pt-1 pb-1 mt-2 mb-3" role="button">More Photo</a>
+            <button class="btn-gradient-3d  text-center w-50 pt-1 pb-1 mt-2 mb-3" type="button" data-toggle="modal" data-target="#Moda4">More Photo</button>
+            <div class="modal fade w-100" id="Moda4" tabindex="-1" role="dialog" aria-labelledby="Modal" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content container">
+                  <div class="modal-header">
+                    <h5 class="modal-title ml-4" id="Modal">百人企画</h5>
+                    <button type="button" class="close pt-4" data-dismiss="modal" aria-label="閉じる">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body row">
+                    <img class="col-xl-6 mb-2" src="img/4hyakuninn/hya01.JPG" alt="image">
+                    <img class="col-xl-6 mb-2" src="img/4hyakuninn/hya02.JPG" alt="image">
+                    <img class="col-xl-6 mb-2" src="img/4hyakuninn/hya03.JPG" alt="image">
+                    <img class="col-xl-6 mb-2" src="img/4hyakuninn/hya04.JPG" alt="image">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn-gradient-3d" data-dismiss="modal">閉じる</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -112,7 +223,28 @@
             特に一年生は先輩と売り歩きして、
             好成績の時は景品も！！
             でも、、売り上げ最下位にはキツイお仕置きが…??</p>
-            <a href="#" class="btn-gradient-3d  text-center w-50 pt-1 pb-1 mt-2 mb-3" role="button">More Photo</a>
+            <button class="btn-gradient-3d  text-center w-50 pt-1 pb-1 mt-2 mb-3" type="button" data-toggle="modal" data-target="#Moda5">More Photo</button>
+            <div class="modal fade w-100" id="Moda5" tabindex="-1" role="dialog" aria-labelledby="Modal" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content container">
+                  <div class="modal-header">
+                    <h5 class="modal-title ml-4" id="Modal">大学祭</h5>
+                    <button type="button" class="close pt-4" data-dismiss="modal" aria-label="閉じる">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body row">
+                    <img class="col-xl-6 mb-2" src="img/5daigakusai/da01.JPG" alt="image">
+                    <img class="col-xl-6 mb-2" src="img/5daigakusai/da02.JPG" alt="image">
+                    <img class="col-xl-6 mb-2" src="img/5daigakusai/da03.JPG" alt="image">
+                    <img class="col-xl-6 mb-2" src="img/5daigakusai/da04.JPG" alt="image">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn-gradient-3d" data-dismiss="modal">閉じる</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="col-md-6 col-xl-3 p-2 mb-5 text-center wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s" data-wow-offset="10">
@@ -122,7 +254,28 @@
             <p class="pb-2 text-left">
             Bテのクリスマスは、スーツ・ ドレス・コスプレ？を身にまとい、
             ゲームしたり美味しいケーキを食べたりワイワイしてます！✨</p>
-            <a href="#" class="btn-gradient-3d  text-center w-50 pt-1 pb-1 mt-2 mb-3" role="button">More Photo</a>
+            <button class="btn-gradient-3d  text-center w-50 pt-1 pb-1 mt-2 mb-3" type="button" data-toggle="modal" data-target="#Moda6">More Photo</button>
+            <div class="modal fade w-100" id="Moda6" tabindex="-1" role="dialog" aria-labelledby="Modal" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content container">
+                  <div class="modal-header">
+                    <h5 class="modal-title ml-4" id="Modal">クリパ</h5>
+                    <button type="button" class="close pt-4" data-dismiss="modal" aria-label="閉じる">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body row">
+                    <img class="col-xl-6 mb-2" src="img/6kuripa/ku01.JPG" alt="image">
+                    <img class="col-xl-6 mb-2" src="img/6kuripa/ku02.JPG" alt="image">
+                    <img class="col-xl-6 mb-2" src="img/6kuripa/ku03.JPG" alt="image">
+                    <img class="col-xl-6 mb-2" src="img/6kuripa/ku04.JPG" alt="image">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn-gradient-3d" data-dismiss="modal">閉じる</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="col-md-6 col-xl-3 p-2 mb-5 text-center wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s" data-wow-offset="10">
@@ -133,7 +286,28 @@
             スノボー初めてでも大丈夫！<br>
             上手な先輩が丁寧に教えてくれます！
             スノボー上級者はモテモテかも？？</p>
-            <a href="#" class="btn-gradient-3d  text-center w-50 pt-1 pb-1 mt-2 mb-3" role="button">More Photo</a>
+            <button class="btn-gradient-3d  text-center w-50 pt-1 pb-1 mt-2 mb-3" type="button" data-toggle="modal" data-target="#Moda7">More Photo</button>
+            <div class="modal fade w-100" id="Moda7" tabindex="-1" role="dialog" aria-labelledby="Modal" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content container">
+                  <div class="modal-header">
+                    <h5 class="modal-title ml-4" id="Modal">冬合宿</h5>
+                    <button type="button" class="close pt-4" data-dismiss="modal" aria-label="閉じる">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body row">
+                    <img class="col-xl-6 mb-2" src="img/7huyugassyuku/hu01.JPG" alt="image">
+                    <img class="col-xl-6 mb-2" src="img/7huyugassyuku/hu02.JPG" alt="image">
+                    <img class="col-xl-6 mb-2" src="img/7huyugassyuku/hu03.JPG" alt="image">
+                    <img class="col-xl-6 mb-2" src="img/7huyugassyuku/hu04.JPG" alt="image">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn-gradient-3d" data-dismiss="modal">閉じる</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="col-md-6 col-xl-3 p-2 mb-5 text-center wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s" data-wow-offset="10">
@@ -143,7 +317,28 @@
             <p class="pb-2 text-left">
             Bテには様々な趣味を持った人がいます！その中で、イベントになったのが音楽祭！！
             歌が上手い人・楽器できる人・音楽始めてみたい子大募集！！</p>
-            <a href="#" class="btn-gradient-3d  text-center w-50 pt-1 pb-1 mt-2 mb-3" role="button">More Photo</a>
+            <button class="btn-gradient-3d  text-center w-50 pt-1 pb-1 mt-2 mb-3" type="button" data-toggle="modal" data-target="#Moda8">More Photo</button>
+            <div class="modal fade w-100" id="Moda8" tabindex="-1" role="dialog" aria-labelledby="Modal" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content container">
+                  <div class="modal-header">
+                    <h5 class="modal-title ml-4" id="Modal">音楽祭</h5>
+                    <button type="button" class="close pt-4" data-dismiss="modal" aria-label="閉じる">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body row">
+                    <img class="col-xl-6 mb-2" src="img/8onngakusai/on01.jpg" alt="image">
+                    <img class="col-xl-6 mb-2" src="img/8onngakusai/on02.jpg" alt="image">
+                    <img class="col-xl-6 mb-2" src="img/8onngakusai/on03.jpg" alt="image">
+                    <img class="col-xl-6 mb-2" src="img/8onngakusai/on04.jpg" alt="image">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn-gradient-3d" data-dismiss="modal">閉じる</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -152,31 +347,21 @@
 
   <div class="container-fluid private">
     <h1 class="text-center mt-5 mb-1 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s" data-wow-offset="10">Private</h1>
-    <!-- Slider全体のコンテナ -->
     <div class="swiper-container mt-4 mb-5 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s" data-wow-offset="10">
-      <!-- Sliderの内包コンテナ -->
       <div class="swiper-wrapper">
-        <!-- Slideさせたいコンテンツ -->
         <div class="swiper-slide"><img class="w-100" src="img/private/disney.jpg" alt="image">
-
         </div>
         <div class="swiper-slide"><img class="w-100" src="img/private/sabage.jpg" alt="image">
-
         </div>
         <div class="swiper-slide"><img class="w-100" src="img/private/camera.jpg" alt="image">
-
         </div>
         <div class="swiper-slide"><img class="w-100" src="img/private/bike.JPG" alt="image">
-
         </div>
         <div class="swiper-slide"><img class="w-100" src="img/private/huzikyu.jpg" alt="image">
-
         </div>
       </div>
       <!-- ページネーション（※省略可） -->
       <div class="swiper-pagination"></div>
-      <!-- スクロールバー（※省略可） -->
-      <!-- <div class="swiper-scrollbar"></div> -->
     </div>
   </div>
 
@@ -186,8 +371,34 @@
   </div>
 
 
+  <!-- <div class="content">
+    <a class="js-modal-open" href="" data-target="modal01">クリックでモーダル1を表示</a><br>
+    <a class="js-modal-open" href="" data-target="modal02">クリックでモーダル2を表示</a>
+  </div>
+  <div id="modal01" class="modal js-modal">
+    <div class="modal__bg js-modal-close"></div>
+    <div class="modal__content container w-75">
+      <a class="js-modal-close" href="">×</a>
+      <h3 class="text-center">確定新歓</h3>
+      <div class="row mt-4">
+        <img class="col-md-6 col-xl-3 mb-2" src="img/1sinnkann/shi01.jpg" alt="image">
+        <img class="col-md-6 col-xl-3 mb-2" src="img/1sinnkann/shi02.jpg" alt="image">
+        <img class="col-md-6 col-xl-3 mb-2" src="img/1sinnkann/shi03.jpg" alt="image">
+        <img class="col-md-6 col-xl-3 mb-2" src="img/1sinnkann/shi04.jpg" alt="image">
+      </div>
+    </div>
+  </div>
+  <div id="modal02" class="modal js-modal">
+    <div class="modal__bg js-modal-close"></div>
+    <div class="modal__content">
+      <img class="w-100" src="img/private/disney.jpg" alt="image">
+      <a class="js-modal-close" href="">閉じる</a>
+    </div>
+  </div> -->
+
+
   <footer>
-    <div class="container-fluid sns wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s" data-wow-offset="10">
+    <div class="container-fluid mb-4 sns wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s" data-wow-offset="10">
       <div class="row text-center">
         <div class="col-12">
           <a href="#"><i class="fab fa-instagram"></i></a>
@@ -195,12 +406,20 @@
           <a href="#"><i class="fab fa-line"></i></a>
         </div>
       </div>
-      <p class="text-center mt-3 mb-3 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s" data-wow-offset="5">
+      <p class="text-center mt-3 mb-4 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s" data-wow-offset="5">
             &copy2020 B-TENNIS
           </p>
     </div>
   </footer>
 
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script> -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <!-- Swiper -->
   <script>
     var mySwiper = new Swiper('.swiper-container', {
@@ -237,6 +456,7 @@
         jQuery('.floating').hide();
       }
     });
+
     jQuery('.floating').click(function () {
       jQuery('body,html').animate({
         scrollTop: 0
@@ -244,6 +464,29 @@
       return false;
     });
   </script>
+  <!-- modal -->
+  <!-- <script>
+    $(function () {
+      var winScrollTop;
+      $('.js-modal-open').each(function () {
+        $(this).on('click', function () {
+          //スクロール位置を取得
+          winScrollTop = $(window).scrollTop();
+          var target = $(this).data('target');
+          var modal = document.getElementById(target);
+          $(modal).fadeIn();
+          return false;
+        });
+      });
+      $('.js-modal-close').on('click', function () {
+        $('.js-modal').fadeOut();
+        $('body,html').stop().animate({ scrollTop: winScrollTop }, 100);
+        return false;
+      });
+    });
+  </script> -->
+
+
 </body>
 </html>
 

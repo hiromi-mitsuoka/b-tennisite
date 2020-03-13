@@ -3,7 +3,7 @@
   margin: 0;
   box-sizing: border-box;
   /* font-family: 'Futura', '筑紫B丸ゴシック'san-selif; */
-  font-family: Futura, "Hirago KakuGothic Pro", sans-serif;
+  font-family: "Futura", "Hirago KakuGothic Pro", sans-serif;
 }
 
 body{
@@ -86,15 +86,17 @@ body{
   border-bottom: none;
 }
 
+/* modal */
+.modal-title{
+  font-size: 1.7rem;
+}
+
 /* Private */
 
 
 /* sns */
-.sns{
-  /* background-color: #FF6928dd; */
-}
 .sns a{
-  font-size: 4rem;
+  font-size: 3rem;
 }
 .fa-instagram{
   color: #e7043b;
@@ -143,23 +145,35 @@ body{
 
 /* メディアクエリ モバイルファースト */
 @media screen and (min-width:576px){
-  .first-view p{
+.first-view p{
   font-size: 23px;
 }
 .card p{
   font-size: 20px;
 }
+.modal-dialog {
+    max-width: 400px!important;
+}
+.modal-title{
+  font-size: 1.5rem;
+}
 }
 
 @media (min-width:768px){
-  h1{
-    font-size: 5rem!important;
-  }
+h1{
+  font-size: 5rem!important;
+}
 .first-view p{
   font-size: 30px;
 }
 .card p{
   font-size: 16px;
+}
+.modal-dialog {
+    max-width: 600px!important;
+}
+.modal-title{
+  font-size: 1.7rem;
 }
 }
 
@@ -170,6 +184,12 @@ body{
 .card p{
   font-size: 18px;
 }
+.modal-dialog {
+    max-width: 700px!important;
+}
+.modal-title{
+  font-size: 1.7rem;
+}
 }
 
 @media (min-width:1200px){
@@ -178,5 +198,11 @@ body{
 }
 .card p{
   font-size: 14px;
+}
+.modal-dialog {
+    max-width: 1000px!important;
+}
+.modal-title{
+  font-size: 1.9rem;
 }
 }
