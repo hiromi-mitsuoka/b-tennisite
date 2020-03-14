@@ -154,12 +154,12 @@ body{
 .card p{
   font-size: 20px;
 }
-.modal-dialog {
+/* .modal-dialog {
     max-width: 400px!important;
 }
 .modal-title{
   font-size: 1.5rem;
-}
+} */
 }
 
 @media (min-width:768px){
@@ -172,12 +172,12 @@ h1{
 .card p{
   font-size: 16px;
 }
-.modal-dialog {
+/* .modal-dialog {
     max-width: 600px!important;
 }
 .modal-title{
   font-size: 1.7rem;
-}
+} */
 }
 
 @media (min-width:992px){
@@ -187,12 +187,12 @@ h1{
 .card p{
   font-size: 18px;
 }
-.modal-dialog {
+/* .modal-dialog {
     max-width: 700px!important;
 }
 .modal-title{
   font-size: 1.7rem;
-}
+} */
 }
 
 @media (min-width:1200px){
@@ -202,10 +202,10 @@ h1{
 .card p{
   font-size: 14px;
 }
-.modal-dialog {
+/* .modal-dialog {
     max-width: 1000px!important;
 }
 .modal-title{
   font-size: 1.9rem;
-}
+} */
 }
