@@ -90,6 +90,9 @@ body{
 .modal-title{
   font-size: 1.7rem;
 }
+.modal-body img{
+  height: auto;
+}
 
 /* Private */
 
