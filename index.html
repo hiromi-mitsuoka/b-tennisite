@@ -18,6 +18,10 @@
   <title>B-TENNIS</title>
 </head>
 <body>
+  <div class="loader-wrap">
+    <div class="loader">Loading...</div>
+  </div>
+
   <header>
     <div id="header-fixed" class="container-fluid pt-2 pl-3 text-center">
       <h1>B-TENNIS</h1>
@@ -60,8 +64,7 @@
             <h2 class="pb-2">確定新歓</h2>
             <p class="pb-2">
             一年生にとって初のイベント！<br>
-            去年はジャンプをテーマに学内全体を貸し切った大イベントを開催！！
-            今年のテーマは当日までのお楽しみだよ！！</p>
+            去年はジャンプをテーマに学内全体を貸し切った大イベントを開催！！今年のテーマは当日までのお楽しみだよ！！</p>
             <button type="button" class="btn-gradient-3d  text-center w-50 pt-1 pb-1 mt-2 mb-3" data-toggle="modal" data-target="#modal01">
               More Photo
             </button>
@@ -95,8 +98,7 @@
             <h2 class="pb-2">夏合宿</h2>
             <p class="pb-2">
             Bテのメインイベント！<br>
-            個人戦、学年別団体戦など目白押し！
-            先輩ともさらに仲良くなれる大チャンス！！</p>
+            個人戦、学年別団体戦など目白押し！先輩ともさらに仲良くなれる大チャンス！！</p>
             <button type="button" class="btn-gradient-3d  text-center w-50 pt-1 pb-1 mt-2 mb-3" data-toggle="modal" data-target="#modal02">
               More Photo
             </button>
@@ -163,10 +165,8 @@
             <img class="w-100 pb-3" src="img/4hyakuninn/hya01.JPG" alt="image">
             <h2 class="pb-2">百人企画</h2>
             <p class="pb-2">
-            あるお題を元にBテ全員で
-            街へ繰り出す大イベント！<br>
-            仮装した先輩から出される
-            難題を解きながら楽しく観光！！</p>
+            あるお題を元にBテ全員で街へ繰り出す大イベント！<br>
+            仮装した先輩から出される難題を解きながら楽しく観光！！</p>
             <button type="button" class="btn-gradient-3d  text-center w-50 pt-1 pb-1 mt-2 mb-3" data-toggle="modal" data-target="#modal04">
               More Photo
             </button>
@@ -203,9 +203,7 @@
             <h2 class="pb-2">大学祭</h2>
             <p class="pb-2">
             Bテは毎年お店を出してます！<br>
-            特に一年生は先輩と売り歩きして、
-            好成績の時は景品も！！
-            でも、、売り上げ最下位にはキツイお仕置きが…??</p>
+            特に一年生は先輩と売り歩きして、好成績の時は景品も！！でも、、売り上げ最下位にはキツイお仕置きが…??</p>
             <button type="button" class="btn-gradient-3d  text-center w-50 pt-1 pb-1 mt-2 mb-3" data-toggle="modal" data-target="#modal05">
               More Photo
             </button>
@@ -238,8 +236,7 @@
             <img class="w-100 pb-3" src="img//6kuripa/ku01.JPG" alt="image">
             <h2 class="pb-2">クリパ</h2>
             <p class="pb-2">
-            Bテのクリスマスは、スーツ・ ドレス・コスプレ？を身にまとい、
-            ゲームしたり美味しいケーキを食べたりワイワイしてます！✨</p>
+            Bテのクリスマスは、スーツ・ ドレス・コスプレ？を身にまとい、ゲームしたり美味しいケーキを食べたりワイワイしてます！✨</p>
             <button type="button" class="btn-gradient-3d  text-center w-50 pt-1 pb-1 mt-2 mb-3" data-toggle="modal" data-target="#modal06">
               More Photo
             </button>
@@ -273,8 +270,7 @@
             <h2 class="pb-2">冬合宿</h2>
             <p class="pb-2">
             スノボー初めてでも大丈夫！<br>
-            上手な先輩が丁寧に教えてくれます！
-            スノボー上級者はモテモテかも？？</p>
+            上手な先輩が丁寧に教えてくれます！スノボー上級者はモテモテかも？？</p>
             <button type="button" class="btn-gradient-3d  text-center w-50 pt-1 pb-1 mt-2 mb-3" data-toggle="modal" data-target="#modal07">
               More Photo
             </button>
@@ -307,8 +303,7 @@
             <img class="w-100 pb-3" src="img/8onngakusai/on01.jpg" alt="image">
             <h2 class="pb-2">音楽祭</h2>
             <p class="pb-2">
-            Bテには様々な趣味を持った人がいます！その中で、イベントになったのが音楽祭！！
-            歌が上手い人・楽器できる人・音楽始めてみたい子大募集！！</p>
+            Bテには様々な趣味を持った人がいます！その中で、イベントになったのが音楽祭！！歌が上手い人・楽器できる人・音楽始めてみたい子大募集！！</p>
             <button type="button" class="btn-gradient-3d  text-center w-50 pt-1 pb-1 mt-2 mb-3" data-toggle="modal" data-target="#modal08">
               More Photo
             </button>
@@ -386,6 +381,23 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <script>
+    $(function () {
+      var loader = $('.loader-wrap');
+
+      //ページの読み込みが完了したらアニメーションを非表示
+      $(window).on('load', function () {
+        loader.fadeOut();
+      });
+
+      //ページの読み込みが完了してなくても3秒後にアニメーションを非表示にする
+      setTimeout(function () {
+        loader.fadeOut();
+      }, 3000);
+    });
+  </script>
+
   <!-- Swiper -->
   <script>
     var mySwiper = new Swiper('.swiper-container', {
