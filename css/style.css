@@ -76,20 +76,18 @@
 p{
   text-align: justify;
 }
-
-#header-fixed{
+nav{
   background: #FF6928;
-  position: fixed;
-  top: 0;
-  z-index: 10;
+}
+nav a{
+  font-size: 1.7rem;
 }
 .first-view p{
-  /* display: block; */
   width: 64%;
   margin: 0 auto;
 }
 .empty h1{
-  color: #fff;
+  color: #fff0;
 }
 
 /* Swiper */
@@ -98,7 +96,10 @@ p{
     height: auto;
     background: #000;
 }
-
+/* schedule */
+.schedule{
+  background: #FF692855;
+}
 
 /* event */
 .pos-match{
@@ -173,8 +174,6 @@ p{
 }
 .fa-twitter{
   color: #00aced;
-  margin-right: 2rem;
-  margin-left: 2rem;
 }
 .fa-line{
   color: #00b900;
@@ -206,6 +205,9 @@ p{
 
 /* メディアクエリ モバイルファースト */
 @media screen and (min-width:576px){
+nav span{
+  font-size: 1.3rem;
+}
 .first-view p{
   font-size: 23px;
 }
@@ -216,10 +218,16 @@ p{
 
 @media (min-width:768px){
 h1{
-  font-size: 5rem!important;
+  font-size: 4rem!important;
+}
+nav span{
+  font-size: 2.0rem;
 }
 .first-view p{
   font-size: 30px;
+}
+.schedule h3{
+  font-size: 20px;
 }
 .card p{
   font-size: 16px;
@@ -227,8 +235,17 @@ h1{
 }
 
 @media (min-width:992px){
+nav span{
+  font-size: 2.5rem;
+}
+nav a{
+  font-size: 2.0rem;
+}
 .first-view p{
   font-size: 38px;
+}
+.schedule h3{
+  font-size: 45px;
 }
 .card p{
   font-size: 18px;
@@ -238,6 +255,9 @@ h1{
 @media (min-width:1200px){
 .first-view p{
   font-size: 40px;
+}
+.schedule h3{
+  font-size: 55px;
 }
 .card p{
   font-size: 14px;
