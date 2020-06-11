@@ -88,24 +88,6 @@ nav a{
   margin: 0 auto;
 }
 
-/* =============================================== */
-
-/* Twitter停止項目に関して */
-.emergency p{
-  width: 64%;
-  margin: 0 auto;
-  color: rgba(255,0,0,0.85);
-}
-
-.emergency p span{
-  font-weight: 900;
-  font-size: 1.1rem;
-  color: rgba(255,0,0,1);
-}
-
-/* =============================================== */
-
-
 .empty h1{
   color: #fff0;
 }
